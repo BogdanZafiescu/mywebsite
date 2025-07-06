@@ -70,7 +70,7 @@ function animateSideLinks() {
                 }
             );
         }
-        , 4600
+        , 4000
     );
 }
 
