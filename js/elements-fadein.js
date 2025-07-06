@@ -10,8 +10,7 @@ window.addEventListener(
                 if(element.getBoundingClientRect().top < 700){
                     element.classList.add('hasFadeIn');
                     console.log(element.getBoundingClientRect().top);
-                }
-                
+                } 
             }
         );
     }

@@ -1,13 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const popup = document.getElementById('construction-popup');
-  const closeBtn = document.getElementById('close-popup');
-  
-  // Block scrolling when popup visible
-  document.body.classList.add('noscroll');
+const clickSound = document.getElementById('click-sound');
 
-  closeBtn.addEventListener('click', () => {
-    popup.style.display = 'none';
-    document.body.classList.remove('noscroll');
+  document.addEventListener('click', (event) => {
+    // Find the closest ancestor <a> element (including the clicked element itself)
+    const link = event.target.closest('a');
+    const button = event.target.closest('button');
+
+    if (link) {
+      clickSound.currentTime = 0;
+      clickSound.play();
+    } 
+    if (button) {
+      clickSound.play();
+    }
   });
-});
-

@@ -36,17 +36,30 @@ let dropNavComponents = () => {
 }
 
 function animateHeroComponents() {
+  const innerComponents = document.querySelectorAll('.hero__inner-components');
+  let heroCompBaseTime = 0;
 
-    for (let i = 0; i < innerComponents.length; i++) {
+  innerComponents.forEach((component, i) => {
+    // Set initial styles so that elements start hidden and shifted
+    component.style.opacity = '0';
+    component.style.transform = component.classList.contains('hero__inner-left') 
+      ? 'translateX(-30px)' 
+      : 'translateX(30px)';
+    component.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
 
-        heroCompBaseTime += 200
-        console.log('hero show component at time ' + heroCompBaseTime);
-        setTimeout(() => {
-            innerComponents[i].style.opacity = "1";
-            innerComponents[i].style.transform = "translateX(0px)";
-        }, heroCompBaseTime);
-    }
+    // Delay increasing by 200ms per component
+    heroCompBaseTime = i * 200;
+
+    setTimeout(() => {
+      component.style.opacity = '1';
+      component.style.transform = 'translateX(0)';
+    }, heroCompBaseTime);
+  });
 }
+
+// Call this after DOM is ready
+document.addEventListener('DOMContentLoaded', animateHeroComponents);
+
 
 function animateSideLinks() {
     setTimeout(
