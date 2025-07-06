@@ -1446,6 +1446,7 @@ input:-webkit-autofill {
 .contacts__social-box a {
     display: block;
     transition: all .2s ease-out;
+    color: rgba(255, 255, 255, 0.393);
 }
 
 
@@ -1473,6 +1474,7 @@ input:-webkit-autofill {
 
 .email a {
     transition: all .2s ease-out;
+    color: rgba(255, 255, 255, 0.393);
 }
 
 .email a:hover {
