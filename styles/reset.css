@@ -1,0 +1,43 @@
+/* Box-sizing reset */
+*,
+*::before,
+*::after,
+*:focus {
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth!important;
+}
+/* Body and page margin/padding reset */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul,article,figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* List style reset */
+ol, ul {
+  list-style: none;
+}
+
+/* Link style reset */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Headings font-weight reset */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* Default font-size and font-family */
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+/*Change display to block to prevent 
+  unwanted surprises*/
+img{
+  display: block;
+}

@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Portofolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" href="images/globe2.png">
+    <script src="particles.js"></script>
+</head>
+
+<body>
+
+    <header id="nav-bar">
+
+        <!-- Top Navigation Bar -->
+        <!-- This is fixed at the top using a wrapper-->
+        <nav class="nav-bar">
+
+            <ul class="nav-bar__home-wrap">
+
+                <li>
+                    <a href="#main">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M12 5.887l8.468 14.113h-16.936l8.468-14.113zm0-3.887l-12 20h24l-12-20z" />
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="nav-bar__author">
+                    Bogdan Zafiescu
+                </li>
+            </ul>
+            <!---->
+            <ul class="nav-bar__inner-wrappers nav-bar__other-links-wrap">
+
+                <!--This menu will apear when the Window width <= 600px-->
+                <li class="nav-bar__ham-menu">
+
+                    <button class="nav-bar__button">
+
+                        <div class="nav-bar__button-line nav-bar__line-top"></div>
+
+                    </button>
+                </li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#tech">Tech</a></li>
+
+                <li><a href="#projects">Projects</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+                <li><a href="/pages/cv.html" target="_blank">Resume</a></li>
+            </ul>
+            <div class="progress-container">
+                <div class="progress-container__bar"></div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="main-container" id="main">
+
+        <!--HERO SECTION-->
+        <div class="hero-overlay"></div> <!-- stays behind -->
+        <section class="hero  is-outer-box deep-blue" id="hero">
+            <div class="hero__inner-container  is-inner-box">
+                <h1 class="hero__inner-components hero__inner-left">Hi there, </h1>
+                <h2 class="hero__inner-components hero__inner-right">I'm Bogdan.</h2>
+                <h3 class="hero__inner-components hero__inner-left">I’m a multifaceted IT professional with hands-on
+                    skills in desktop support, programming, and web development.
+
+                </h3>
+                <p class="hero__inner-components hero__inner-right">
+                    Reliable IT professional skilled in desktop support, software troubleshooting, and networking in
+                    Windows and Linux environments. Experienced with workstation configuration, system backups, and
+                    resolving hardware/software issues. Certified in NDG Linux Essentials and pursuing Cisco CCST
+                    Networking certification. Competent in Java, HTML, CSS, and JavaScript. Multilingual with strong
+                    problem-solving and user support skills.
+                </p>
+                <div class="triple-arrow">
+                    <a href="#about">
+                        <div class="arrow"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--About section --provides more information about myself && an image-->
+        <section class="about  is-outer-box main__element" id="about">
+
+            <article class="about__inner-container  is-inner-box is_hidden">
+
+                <h2 class="about__title">About Me</h2>
+
+                <!--Image && descriptive text-->
+                <div class="about__content">
+
+                    <div class="about__image-container">
+                        <div class="about__avatar__overlay"></div>
+                        <img src="images/me4.png" alt="my avatar">
+                    </div>
+
+                    <div class="about__content-text">
+
+                        <p><strong>Hi, I’m Bogdan — an IT Support & Digital Operations Specialist with a strong passion
+                                for technology and practical coding experience.</strong><br>
+                            My interest in tech started back in high school, and now I’m fortunate to work in a role
+                            that keeps me engaged and constantly learning.</p>
+
+                        <p>I’m based in Bucharest and currently work at <strong>Casa Schiller</strong> as an <strong>IT
+                                Support & Digital Operations Specialist</strong>.
+                            My responsibilities include maintaining desktop systems and peripherals, configuring
+                            software and operating systems, managing user accounts and backups, supporting local
+                            networks,
+                            and assisting with AV and email systems. I also manage the organization’s <strong>WordPress
+                                website</strong>, performing updates, front-end edits, and content optimization for
+                            mobile devices.</p>
+
+                        <p>In addition to my IT support duties, I have practical coding experience in <strong>front-end
+                                web development</strong> (HTML, CSS, JavaScript) and <strong>Java programming</strong>.
+                            I’ve completed a few small Java projects focused on automating operating system tasks and
+                            basic gaming applications. These projects have helped me build problem-solving skills and
+                            deepen my understanding of programming concepts.</p>
+
+                        <p>This website was designed and coded entirely by me, showcasing my hands-on skills in both
+                            development and design.</p>
+
+                        <p>I am certified in <strong>NDG Linux Essentials</strong>, and I bring a balanced mix of
+                            technical support, coding, and problem-solving skills to my work. I enjoy creating practical
+                            solutions that improve workflows and user experiences.</p>
+
+
+
+
+                    </div>
+
+
+                </div>
+
+
+                <section class="self-assertion">
+                    <h3>Self assertion:</h3>
+                    <div class="self-assertion__container">
+
+                        <div class="self-assertion__box">
+                            <div class="self-assertion__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24">
+                                    <path
+                                        d="M20 6h-8l-1-2h-5c-1.104 0-2 .896-2 2v12c0 1.104.896 2 2 2h14c1.104 0 2-.896 2-2v-10c0-1.104-.896-2-2-2zm0 12h-14v-12h4.618l1 2h8.382v10z" />
+                                </svg>
+                            </div>
+                            <div class="self-assertion__text">
+                                <h4>IT Support Specialist</h4>
+                            </div>
+                        </div>
+
+                        <div class="self-assertion__box">
+                            <div class="self-assertion__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.627 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385-.113-.963-.213-2.442.045-3.497.232-.997 1.498-6.341 1.498-6.341s-.383-.766-.383-1.897c0-1.776 1.03-3.104 2.312-3.104 1.09 0 1.617.819 1.617 1.8 0 1.096-.699 2.736-1.058 4.258-.299 1.266.635 2.298 1.883 2.298 2.259 0 3.996-2.383 3.996-5.817 0-3.041-2.187-5.172-5.311-5.172-3.616 0-5.744 2.713-5.744 5.519 0 1.095.422 2.27.949 2.906.105.128.12.239.09.368-.099.405-.322 1.289-.364 1.47-.057.238-.187.289-.434.174-1.615-.752-2.625-3.106-2.625-5.001 0-4.069 2.956-7.812 8.52-7.812 4.472 0 7.951 3.188 7.951 7.455 0 4.438-2.803 8.02-6.693 8.02-1.307 0-2.537-.678-2.957-1.481l-.805 3.072c-.291 1.133-1.084 2.551-1.615 3.417 1.214.373 2.494.575 3.825.575 6.627 0 12-5.373 12-12s-5.373-12-12-12z" />
+                                </svg>
+                            </div>
+                            <div class="self-assertion__text">
+                                <h4>Networking Learner</h4>
+                            </div>
+                        </div>
+
+                        <div class="self-assertion__box">
+                            <div class="self-assertion__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24">
+                                    <path
+                                        d="M22 6v16h-20v-16h20zm2-6h-24v24h24v-24zm-11 11v1.649l3.229 1.351-3.229 1.347v1.653l5-2.201v-1.599l-5-2.2zm-7 2.201v1.599l5 2.2v-1.653l-3.229-1.347 3.229-1.351v-1.649l-5 2.201z" />
+                                </svg>
+                            </div>
+                            <div class="self-assertion__text">
+                                <h4>Front-End Developer</h4>
+                            </div>
+                        </div>
+
+                        <div class="self-assertion__box">
+                            <div class="self-assertion__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.768 15.583l-.504-1.064c.307-1.87-.554-3.518-1.581-4.574-.862-.886-.584-1.748-.584-2.495 0-1.192-.488-2.45-1.972-2.45-1.585 0-2.02 1.323-2.035 2.077-.038 1.812.366 2.283-.693 3.603-1.248 1.552-1.433 3.099-1.15 3.92-.133.153-.311.323-.643.464-.918.4-.245 1.069-.499 1.544-.072.135-.107.275-.107.411 0 .417.331.777.934.723.812-.073 1.56.502 2.044.502.428 0 .779-.243.941-.578.766-.188 1.71-.165 2.475.032.138.385.51.634.924.634.906 0 1.081-1.027 2.12-1.375.374-.124.562-.487.562-.826 0-.216-.077-.422-.232-.548z" />
+                                </svg>
+                            </div>
+                            <div class="self-assertion__text">
+                                <h4>Linux Practitioner</h4>
+                            </div>
+                        </div>
+
+
+
+                        <div class="self-assertion__box">
+                            <div class="self-assertion__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24">
+                                    <path
+                                        d="M14.911 10c-.308 3.325-1.398 5.712-2.949 8h-4.925c-1.373-2.009-2.612-4.372-2.948-8h10.822zm2.089-2h-15c0 5.716 1.826 8.996 4 12h7c2.12-2.911 4-6.333 4-12z" />
+                                </svg>
+                            </div>
+                            <div class="self-assertion__text">
+                                <h4>Java Programmer</h4>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </section>
+
+            </article>
+        </section>
+
+        <!--The technologies section-->
+        <section class="tech is-outer-box main__element" id="tech">
+
+            <div class="tech__inner is-inner-box">
+
+                <div class="tech__intro">
+                    <h2 class="tech__heading">Technologies</h2>
+
+                    <h4 class="tech__description">Here are some technologies that I have worked with</h4>
+                </div>
+
+                <div class="tech__container">
+
+                    <div class="tech__tabs-container">
+
+                        <div class="tech__less not-selection">&lt;</div>
+
+                        <ul class="tech__tabs">
+
+                            <li>
+                                <button class="tab-buttons">HTML</button>
+                            </li>
+
+                            <li>
+                                <button class="tab-buttons">CSS 3</button>
+                            </li>
+
+                            <li>
+                                <button class="tab-buttons">JavaScript</button>
+                            </li>
+
+                            <li>
+                                <button class="tab-buttons">Linux</button>
+                            </li>
+
+                            <li>
+                                <button class="tab-buttons">Photoshop</button>
+                            </li>
+
+                            <li><button class="tab-buttons">Java</button></li>
+
+                        </ul>
+
+                        <div class="tech__more not-selection">&gt;</div>
+
+                    </div>
+
+                    <div class="tech__box">
+
+                        <div class="tech__skill__display">
+                            <div class="tech__skill__outer">
+                                <div class="tech__skill__inner html">90%</div>
+                            </div>
+                        </div>
+
+                        <div class="tech__box_info active">
+                            <div class="tech__img-container">
+                                <img src="images/html.png" alt="Image html">
+                            </div>
+                            <div class="tech__img-description">
+                                <p>HTML is the backbone of every website, and I have a solid understanding of its core
+                                    concepts and syntax. With my knowledge of HTML, I can create well-structured and
+                                    organized web pages that effectively convey information. I am proficient in using
+                                    HTML5, the latest version of HTML, which allows me to incorporate modern features
+                                    and elements into my projects. By leveraging HTML, I can build the foundation for
+                                    visually appealing and user-friendly websites."</p>
+
+                            </div>
+
+                        </div>
+                        <div class="tech__box_info inActive">
+                            <div class="tech__img-container">
+                                <img src="images/css-3.png" alt="Image html">
+                            </div>
+                            <div class="tech__img-description">
+                                <p>CSS plays a vital role in transforming a website's appearance and layout. I have
+                                    completed online courses in CSS, equipping me with the skills to bring designs to
+                                    life and make them visually engaging. With CSS, I can apply styles, colors, and
+                                    layouts to create stunning and responsive websites. I am familiar with CSS3 features
+                                    and techniques, enabling me to implement animations, transitions, and other modern
+                                    design elements. By utilizing CSS, I can enhance user experience and ensure
+                                    consistency across different devices.</p>
+
+                            </div>
+                        </div>
+                        <div class="tech__box_info inActive">
+                            <div class="tech__img-container">
+                                <img src="images/js.png" alt="Image html">
+                            </div>
+                            <div class="tech__img-description">
+
+                                <p>I have acquired foundational knowledge in JavaScript through online courses,
+                                    empowering me to create interactive and user-friendly elements on websites. With
+                                    JavaScript, I can enhance the functionality of web pages by validating form inputs,
+                                    creating interactive menus, and implementing client-side interactions. I have a
+                                    solid understanding of JavaScript syntax and can write clean and organized code to
+                                    achieve desired results. By utilizing JavaScript, I can add interactivity to
+                                    websites and improve user experience.</p>
+                            </div>
+                        </div>
+                        <div class="tech__box_info inActive">
+                            <div class="tech__img-container">
+                                <img src="images/linux.png" alt="Image html">
+                            </div>
+                            <div class="tech__img-description">
+
+                                <p>I have a solid foundation in Linux, with practical experience gained through
+                                    self-learning and experimentation with various distributions like Ubuntu, Fedora,
+                                    and Manjaro. I have completed a basic course and expanded my knowledge through
+                                    hands-on exploration. With my understanding of Linux essentials, I can navigate the
+                                    command line interface, manage files and directories, and perform basic system
+                                    administration tasks. I am comfortable with fundamental concepts such as package
+                                    management, user permissions, and file system navigation. By leveraging my Linux
+                                    skills, I can contribute to the deployment and maintenance of web applications,
+                                    ensuring a stable and secure hosting environment.</p>
+                            </div>
+                        </div>
+                        <div class="tech__box_info inActive">
+                            <div class="tech__img-container">
+                                <img src="images/adobe-photoshop.png" alt="Image html">
+                            </div>
+                            <div class="tech__img-description">
+
+                                <p>I have developed a foundational understanding of Photoshop through personal
+                                    exploration and practical use in various projects. I am proficient in performing
+                                    tasks such as image enhancement, retouching, and creative editing. With my knowledge
+                                    of Photoshop, I can effectively utilize its tools and features to modify images and
+                                    create visually appealing content. I am continuously learning and expanding my
+                                    skills in Photoshop to enhance my ability to deliver compelling visual elements for
+                                    websites and other digital platforms.</p>
+                            </div>
+                        </div>
+
+                        <div class="additional-tech" id="cacat">
+
+                            <div class="os">
+                                <ul>
+                                    <li><strong>Operating Systems</strong></li>
+                                    <li>Windows (95 - 11)</li>
+                                    <li>Windows CMD</li>
+                                    <li>Ubuntu Linux</li>
+                                    <li>Linux CLI</li>
+                                </ul>
+                            </div>
+
+                            <div class="networking">
+                                <ul>
+                                    <li><strong>Networking</strong></li>
+                                    <li>TCP/IP, Subnetting</li>
+                                    <li>DNS, DHCP, FTP, SMTP, SSH</li>
+                                    <li>Packet Tracer, ipconfig, tracert</li>
+                                </ul>
+                            </div>
+
+                            <div class="other-programming">
+                                <ul>
+                                    <li><strong>Other languages</strong></li>
+                                    <li>Java</li>
+                                </ul>
+                            </div>
+
+                            <div class="code-editors">
+                                <ul>
+                                    <li><strong>Text editors</strong></li>
+                                    <li>Visual Studio Code</li>
+                                    <li>Atom</li>
+                                    <li>vim</li>
+                                    <li>microsoft.edit</li>
+                                </ul>
+                            </div>
+
+                            <div class="ides">
+                                <ul>
+                                    <li><strong>IDEs</strong></li>
+                                    <li>Code Blocks</li>
+                                    <li>InteliJ IDEA</li>
+                                    <li>Eclipse</li>
+                                    <li>vim</li>
+                                    <li>microsoft edit</li>
+                                </ul>
+                            </div>
+
+                            <div class="versionControl">
+                                <ul>
+                                    <li><strong>Version Control</strong></li>
+                                    <li>git</li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <!--Projects page-->
+        <!--Here there are a few projects-->
+        <section class="projects is-outer-box main__element" id="projects">
+
+            <div class="projects__inner  is-inner-box">
+
+                <h2 class="projects__title">My Projects</h2>
+
+                <!--Group 1 visible-->
+                <div class="project__card-container not-selection">
+
+                    <div class="projects__initial-card-position">
+
+                        <div class="projects__behind-card">
+
+                        </div>
+
+                        <div class="projects__card">
+
+                            <div class="projects__card-top">
+                                <?xml version="1.0" encoding="UTF-8"?>
+
+                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="64px" height="64px" viewBox="0 0 48 48" id="a"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <defs>
+
+                                        <style>
+                                            <!-- .b {
+                                            fill: none;
+                                            stroke: #000000;
+                                            stroke-linecap: round;
+                                            stroke-linejoin: round;
+                                            }
+                                            -->
+                                        </style>
+
+                                    </defs>
+
+                                    <polyline class="b" points="29.1779 28.4062 32.9209 32.1492 39.7392 25.3308" />
+
+                                    <g>
+
+                                        <path class="b"
+                                            d="m41.6801,13.015h-16.91c-2-.1-5.93-4.23-8.19-4.23H6.6801c-1.204-.0003-2.1803.9754-2.1806,2.1794,0,.0169.0002.0337.0006.0506h0v7.29h39v-3.42c.0221-1.0104-.7791-1.8475-1.7895-1.8696-.0102-.0002-.0203-.0004-.0305-.0004Z" />
+
+                                        <path class="b"
+                                            d="m4.5001,18.295v18.72c-.0111,1.2039.956,2.1889,2.1599,2.1999.0034,0,.0067,0,.0101,0h34.65c1.204,0,2.18-.9759,2.1801-2.1799,0-.0067,0-.0134,0-.0201h0v-18.72" />
+
+                                    </g>
+
+                                </svg>
+
+                            </div>
+
+                            <h3>Upcoming Project</h3>
+                            <h4>Exploring the Possibilities</h4>
+                            <p>Coming soon: innovative projects where I explore new ideas.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="projects__initial-card-position">
+
+                        <div class="projects__behind-card">
+
+                        </div>
+
+                        <div class="projects__card">
+
+                            <div class="projects__card-top">
+                                <?xml version="1.0" encoding="UTF-8"?>
+
+                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="64px" height="64px" viewBox="0 0 48 48" id="a"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <defs>
+
+                                        <style>
+                                            .b {
+                                                fill: none;
+                                                stroke: #000000;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                            }
+                                        </style>
+
+                                    </defs>
+
+                                    <polyline class="b" points="29.1779 28.4062 32.9209 32.1492 39.7392 25.3308" />
+
+                                    <g>
+
+                                        <path class="b"
+                                            d="m41.6801,13.015h-16.91c-2-.1-5.93-4.23-8.19-4.23H6.6801c-1.204-.0003-2.1803.9754-2.1806,2.1794,0,.0169.0002.0337.0006.0506h0v7.29h39v-3.42c.0221-1.0104-.7791-1.8475-1.7895-1.8696-.0102-.0002-.0203-.0004-.0305-.0004Z" />
+
+                                        <path class="b"
+                                            d="m4.5001,18.295v18.72c-.0111,1.2039.956,2.1889,2.1599,2.1999.0034,0,.0067,0,.0101,0h34.65c1.204,0,2.18-.9759,2.1801-2.1799,0-.0067,0-.0134,0-.0201h0v-18.72" />
+
+                                    </g>
+
+                                </svg>
+
+                            </div>
+
+                            <h3>Upcoming Project</h3>
+                            <h4>Exploring the Possibilities</h4>
+                            <p>Coming soon: innovative projects where I explore new ideas.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="projects__initial-card-position">
+
+                        <div class="projects__behind-card">
+
+                        </div>
+
+                        <div class="projects__card">
+
+                            <div class="projects__card-top">
+                                <?xml version="1.0" encoding="UTF-8"?>
+
+                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="64px" height="64px" viewBox="0 0 48 48" id="a"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <defs>
+
+                                        <style>
+                                            .b {
+                                                fill: none;
+                                                stroke: #000000;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                            }
+                                        </style>
+
+                                    </defs>
+
+                                    <polyline class="b" points="29.1779 28.4062 32.9209 32.1492 39.7392 25.3308" />
+
+                                    <g>
+
+                                        <path class="b"
+                                            d="m41.6801,13.015h-16.91c-2-.1-5.93-4.23-8.19-4.23H6.6801c-1.204-.0003-2.1803.9754-2.1806,2.1794,0,.0169.0002.0337.0006.0506h0v7.29h39v-3.42c.0221-1.0104-.7791-1.8475-1.7895-1.8696-.0102-.0002-.0203-.0004-.0305-.0004Z" />
+
+                                        <path class="b"
+                                            d="m4.5001,18.295v18.72c-.0111,1.2039.956,2.1889,2.1599,2.1999.0034,0,.0067,0,.0101,0h34.65c1.204,0,2.18-.9759,2.1801-2.1799,0-.0067,0-.0134,0-.0201h0v-18.72" />
+
+                                    </g>
+
+                                </svg>
+
+                            </div>
+
+                            <h3>Upcoming Project</h3>
+                            <h4>Exploring the Possibilities</h4>
+                            <p>Coming soon: innovative projects where I explore new ideas.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="projects__initial-card-position">
+
+                        <div class="projects__behind-card">
+
+                        </div>
+
+                        <div class="projects__card">
+
+                            <div class="projects__card-top">
+                                <?xml version="1.0" encoding="UTF-8"?>
+
+                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="64px" height="64px" viewBox="0 0 48 48" id="a"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <defs>
+
+                                        <style>
+                                            .b {
+                                                fill: none;
+                                                stroke: #000000;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                            }
+                                        </style>
+
+                                    </defs>
+
+                                    <polyline class="b" points="29.1779 28.4062 32.9209 32.1492 39.7392 25.3308" />
+
+                                    <g>
+
+                                        <path class="b"
+                                            d="m41.6801,13.015h-16.91c-2-.1-5.93-4.23-8.19-4.23H6.6801c-1.204-.0003-2.1803.9754-2.1806,2.1794,0,.0169.0002.0337.0006.0506h0v7.29h39v-3.42c.0221-1.0104-.7791-1.8475-1.7895-1.8696-.0102-.0002-.0203-.0004-.0305-.0004Z" />
+
+                                        <path class="b"
+                                            d="m4.5001,18.295v18.72c-.0111,1.2039.956,2.1889,2.1599,2.1999.0034,0,.0067,0,.0101,0h34.65c1.204,0,2.18-.9759,2.1801-2.1799,0-.0067,0-.0134,0-.0201h0v-18.72" />
+
+                                    </g>
+
+                                </svg>
+
+                            </div>
+
+                            <h3>Upcoming Project</h3>
+                            <h4>Exploring the Possibilities</h4>
+                            <p>Coming soon: innovative projects where I explore new ideas.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="projects__initial-card-position">
+
+                        <div class="projects__behind-card">
+
+                        </div>
+
+                        <div class="projects__card">
+
+                            <div class="projects__card-top">
+                                <?xml version="1.0" encoding="UTF-8"?>
+
+                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="64px" height="64px" viewBox="0 0 48 48" id="a"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <defs>
+
+                                        <style>
+                                            .b {
+                                                fill: none;
+                                                stroke: #000000;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                            }
+                                        </style>
+
+                                    </defs>
+
+                                    <polyline class="b" points="29.1779 28.4062 32.9209 32.1492 39.7392 25.3308" />
+
+                                    <g>
+
+                                        <path class="b"
+                                            d="m41.6801,13.015h-16.91c-2-.1-5.93-4.23-8.19-4.23H6.6801c-1.204-.0003-2.1803.9754-2.1806,2.1794,0,.0169.0002.0337.0006.0506h0v7.29h39v-3.42c.0221-1.0104-.7791-1.8475-1.7895-1.8696-.0102-.0002-.0203-.0004-.0305-.0004Z" />
+
+                                        <path class="b"
+                                            d="m4.5001,18.295v18.72c-.0111,1.2039.956,2.1889,2.1599,2.1999.0034,0,.0067,0,.0101,0h34.65c1.204,0,2.18-.9759,2.1801-2.1799,0-.0067,0-.0134,0-.0201h0v-18.72" />
+
+                                    </g>
+
+                                </svg>
+
+                            </div>
+
+                            <h3>Upcoming Project</h3>
+                            <h4>Exploring the Possibilities</h4>
+                            <p>Coming soon: innovative projects where I explore new ideas.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="projects__initial-card-position">
+
+                        <div class="projects__behind-card">
+
+                        </div>
+
+                        <div class="projects__card">
+
+                            <div class="projects__card-top">
+                                <?xml version="1.0" encoding="UTF-8"?>
+
+                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="64px" height="64px" viewBox="0 0 48 48" id="a"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <defs>
+
+                                        <style>
+                                            .b {
+                                                fill: none;
+                                                stroke: #000000;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                            }
+                                        </style>
+
+                                    </defs>
+
+                                    <polyline class="b" points="29.1779 28.4062 32.9209 32.1492 39.7392 25.3308" />
+
+                                    <g>
+
+                                        <path class="b"
+                                            d="m41.6801,13.015h-16.91c-2-.1-5.93-4.23-8.19-4.23H6.6801c-1.204-.0003-2.1803.9754-2.1806,2.1794,0,.0169.0002.0337.0006.0506h0v7.29h39v-3.42c.0221-1.0104-.7791-1.8475-1.7895-1.8696-.0102-.0002-.0203-.0004-.0305-.0004Z" />
+
+                                        <path class="b"
+                                            d="m4.5001,18.295v18.72c-.0111,1.2039.956,2.1889,2.1599,2.1999.0034,0,.0067,0,.0101,0h34.65c1.204,0,2.18-.9759,2.1801-2.1799,0-.0067,0-.0134,0-.0201h0v-18.72" />
+
+                                    </g>
+
+                                </svg>
+
+                            </div>
+
+                            <h3>Upcoming Project</h3>
+                            <h4>Exploring the Possibilities</h4>
+                            <p>Coming soon: innovative projects where I explore new ideas.</p>
+                        </div>
+
+                    </div>
+
+                    <!--Group 2----------------------------------------->
+                    <div class="projects__initial-card-position hidden">
+
+                        <div class="projects__behind-card">
+
+                        </div>
+
+                        <div class="projects__card">
+
+                            <div class="projects__card-top">
+                                <?xml version="1.0" encoding="UTF-8"?>
+
+                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="64px" height="64px" viewBox="0 0 48 48" id="a"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <defs>
+
+                                        <style>
+                                            .b {
+                                                fill: none;
+                                                stroke: #000000;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                            }
+                                        </style>
+
+                                    </defs>
+
+                                    <polyline class="b" points="29.1779 28.4062 32.9209 32.1492 39.7392 25.3308" />
+
+                                    <g>
+
+                                        <path class="b"
+                                            d="m41.6801,13.015h-16.91c-2-.1-5.93-4.23-8.19-4.23H6.6801c-1.204-.0003-2.1803.9754-2.1806,2.1794,0,.0169.0002.0337.0006.0506h0v7.29h39v-3.42c.0221-1.0104-.7791-1.8475-1.7895-1.8696-.0102-.0002-.0203-.0004-.0305-.0004Z" />
+
+                                        <path class="b"
+                                            d="m4.5001,18.295v18.72c-.0111,1.2039.956,2.1889,2.1599,2.1999.0034,0,.0067,0,.0101,0h34.65c1.204,0,2.18-.9759,2.1801-2.1799,0-.0067,0-.0134,0-.0201h0v-18.72" />
+
+                                    </g>
+
+                                </svg>
+
+                            </div>
+
+                            <h3>Upcoming Project</h3>
+                            <h4>Exploring the Possibilities</h4>
+                            <p>Coming soon: innovative projects where I explore new ideas.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="projects__initial-card-position hidden">
+
+                        <div class="projects__behind-card">
+
+                        </div>
+
+                        <div class="projects__card">
+
+                            <div class="projects__card-top">
+                                <?xml version="1.0" encoding="UTF-8"?>
+
+                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="64px" height="64px" viewBox="0 0 48 48" id="a"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <defs>
+
+                                        <style>
+                                            .b {
+                                                fill: none;
+                                                stroke: #000000;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                            }
+                                        </style>
+
+                                    </defs>
+
+                                    <polyline class="b" points="29.1779 28.4062 32.9209 32.1492 39.7392 25.3308" />
+
+                                    <g>
+
+                                        <path class="b"
+                                            d="m41.6801,13.015h-16.91c-2-.1-5.93-4.23-8.19-4.23H6.6801c-1.204-.0003-2.1803.9754-2.1806,2.1794,0,.0169.0002.0337.0006.0506h0v7.29h39v-3.42c.0221-1.0104-.7791-1.8475-1.7895-1.8696-.0102-.0002-.0203-.0004-.0305-.0004Z" />
+
+                                        <path class="b"
+                                            d="m4.5001,18.295v18.72c-.0111,1.2039.956,2.1889,2.1599,2.1999.0034,0,.0067,0,.0101,0h34.65c1.204,0,2.18-.9759,2.1801-2.1799,0-.0067,0-.0134,0-.0201h0v-18.72" />
+
+                                    </g>
+
+                                </svg>
+
+                            </div>
+
+                            <h3>Upcoming Project</h3>
+                            <h4>Exploring the Possibilities</h4>
+                            <p>Coming soon: innovative projects where I explore new ideas.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="projects__initial-card-position hidden">
+
+                        <div class="projects__behind-card">
+
+                        </div>
+
+                        <div class="projects__card">
+
+                            <div class="projects__card-top">
+                                <?xml version="1.0" encoding="UTF-8"?>
+
+                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="64px" height="64px" viewBox="0 0 48 48" id="a"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <defs>
+
+                                        <style>
+                                            .b {
+                                                fill: none;
+                                                stroke: #000000;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                            }
+                                        </style>
+
+                                    </defs>
+
+                                    <polyline class="b" points="29.1779 28.4062 32.9209 32.1492 39.7392 25.3308" />
+
+                                    <g>
+
+                                        <path class="b"
+                                            d="m41.6801,13.015h-16.91c-2-.1-5.93-4.23-8.19-4.23H6.6801c-1.204-.0003-2.1803.9754-2.1806,2.1794,0,.0169.0002.0337.0006.0506h0v7.29h39v-3.42c.0221-1.0104-.7791-1.8475-1.7895-1.8696-.0102-.0002-.0203-.0004-.0305-.0004Z" />
+
+                                        <path class="b"
+                                            d="m4.5001,18.295v18.72c-.0111,1.2039.956,2.1889,2.1599,2.1999.0034,0,.0067,0,.0101,0h34.65c1.204,0,2.18-.9759,2.1801-2.1799,0-.0067,0-.0134,0-.0201h0v-18.72" />
+
+                                    </g>
+
+                                </svg>
+
+                            </div>
+
+                            <h3>Upcoming Project</h3>
+                            <h4>Exploring the Possibilities</h4>
+                            <p>Coming soon: innovative projects where I explore new ideas.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="projects__initial-card-position hidden">
+
+                        <div class="projects__behind-card">
+
+                        </div>
+
+                        <div class="projects__card">
+
+                            <div class="projects__card-top">
+                                <?xml version="1.0" encoding="UTF-8"?>
+
+                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="64px" height="64px" viewBox="0 0 48 48" id="a"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <defs>
+
+                                        <style>
+                                            .b {
+                                                fill: none;
+                                                stroke: #000000;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                            }
+                                        </style>
+
+                                    </defs>
+
+                                    <polyline class="b" points="29.1779 28.4062 32.9209 32.1492 39.7392 25.3308" />
+
+                                    <g>
+
+                                        <path class="b"
+                                            d="m41.6801,13.015h-16.91c-2-.1-5.93-4.23-8.19-4.23H6.6801c-1.204-.0003-2.1803.9754-2.1806,2.1794,0,.0169.0002.0337.0006.0506h0v7.29h39v-3.42c.0221-1.0104-.7791-1.8475-1.7895-1.8696-.0102-.0002-.0203-.0004-.0305-.0004Z" />
+
+                                        <path class="b"
+                                            d="m4.5001,18.295v18.72c-.0111,1.2039.956,2.1889,2.1599,2.1999.0034,0,.0067,0,.0101,0h34.65c1.204,0,2.18-.9759,2.1801-2.1799,0-.0067,0-.0134,0-.0201h0v-18.72" />
+
+                                    </g>
+
+                                </svg>
+
+                            </div>
+
+                            <h3>Upcoming Project</h3>
+                            <h4>Exploring the Possibilities</h4>
+                            <p>Coming soon: innovative projects where I explore new ideas.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="projects__initial-card-position hidden">
+
+                        <div class="projects__behind-card">
+
+                        </div>
+
+                        <div class="projects__card">
+
+                            <div class="projects__card-top">
+                                <?xml version="1.0" encoding="UTF-8"?>
+
+                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="64px" height="64px" viewBox="0 0 48 48" id="a"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <defs>
+
+                                        <style>
+                                            .b {
+                                                fill: none;
+                                                stroke: #000000;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                            }
+                                        </style>
+
+                                    </defs>
+
+                                    <polyline class="b" points="29.1779 28.4062 32.9209 32.1492 39.7392 25.3308" />
+
+                                    <g>
+
+                                        <path class="b"
+                                            d="m41.6801,13.015h-16.91c-2-.1-5.93-4.23-8.19-4.23H6.6801c-1.204-.0003-2.1803.9754-2.1806,2.1794,0,.0169.0002.0337.0006.0506h0v7.29h39v-3.42c.0221-1.0104-.7791-1.8475-1.7895-1.8696-.0102-.0002-.0203-.0004-.0305-.0004Z" />
+
+                                        <path class="b"
+                                            d="m4.5001,18.295v18.72c-.0111,1.2039.956,2.1889,2.1599,2.1999.0034,0,.0067,0,.0101,0h34.65c1.204,0,2.18-.9759,2.1801-2.1799,0-.0067,0-.0134,0-.0201h0v-18.72" />
+
+                                    </g>
+
+                                </svg>
+
+                            </div>
+
+                            <h3>Upcoming Project</h3>
+                            <h4>Exploring the Possibilities</h4>
+                            <p>Coming soon: innovative projects where I explore new ideas.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="projects__initial-card-position hidden">
+
+                        <div class="projects__behind-card">
+
+                        </div>
+
+                        <div class="projects__card">
+
+                            <div class="projects__card-top">
+                                <?xml version="1.0" encoding="UTF-8"?>
+
+                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="64px" height="64px" viewBox="0 0 48 48" id="a"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <defs>
+
+                                        <style>
+                                            .b {
+                                                fill: none;
+                                                stroke: #000000;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                            }
+                                        </style>
+
+                                    </defs>
+
+                                    <polyline class="b" points="29.1779 28.4062 32.9209 32.1492 39.7392 25.3308" />
+
+                                    <g>
+
+                                        <path class="b"
+                                            d="m41.6801,13.015h-16.91c-2-.1-5.93-4.23-8.19-4.23H6.6801c-1.204-.0003-2.1803.9754-2.1806,2.1794,0,.0169.0002.0337.0006.0506h0v7.29h39v-3.42c.0221-1.0104-.7791-1.8475-1.7895-1.8696-.0102-.0002-.0203-.0004-.0305-.0004Z" />
+
+                                        <path class="b"
+                                            d="m4.5001,18.295v18.72c-.0111,1.2039.956,2.1889,2.1599,2.1999.0034,0,.0067,0,.0101,0h34.65c1.204,0,2.18-.9759,2.1801-2.1799,0-.0067,0-.0134,0-.0201h0v-18.72" />
+
+                                    </g>
+
+                                </svg>
+
+                            </div>
+
+                            <h3>Upcoming Project</h3>
+                            <h4>Exploring the Possibilities</h4>
+                            <p>Coming soon: innovative projects where I explore new ideas.</p>
+                        </div>
+
+                    </div>
+
+
+                    <!--Group 3----------------------------------------->
+                    <div class="projects__initial-card-position hidden">
+
+                        <div class="projects__behind-card">
+
+                        </div>
+
+                        <div class="projects__card">
+
+                            <div class="projects__card-top">
+                                <?xml version="1.0" encoding="UTF-8"?>
+
+                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="64px" height="64px" viewBox="0 0 48 48" id="a"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <defs>
+
+                                        <style>
+                                            .b {
+                                                fill: none;
+                                                stroke: #000000;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                            }
+                                        </style>
+
+                                    </defs>
+
+                                    <polyline class="b" points="29.1779 28.4062 32.9209 32.1492 39.7392 25.3308" />
+
+                                    <g>
+
+                                        <path class="b"
+                                            d="m41.6801,13.015h-16.91c-2-.1-5.93-4.23-8.19-4.23H6.6801c-1.204-.0003-2.1803.9754-2.1806,2.1794,0,.0169.0002.0337.0006.0506h0v7.29h39v-3.42c.0221-1.0104-.7791-1.8475-1.7895-1.8696-.0102-.0002-.0203-.0004-.0305-.0004Z" />
+
+                                        <path class="b"
+                                            d="m4.5001,18.295v18.72c-.0111,1.2039.956,2.1889,2.1599,2.1999.0034,0,.0067,0,.0101,0h34.65c1.204,0,2.18-.9759,2.1801-2.1799,0-.0067,0-.0134,0-.0201h0v-18.72" />
+
+                                    </g>
+
+                                </svg>
+
+                            </div>
+
+                            <h3>Upcoming Project</h3>
+                            <h4>Exploring the Possibilities</h4>
+                            <p>Coming soon: innovative projects where I explore new ideas.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="projects__initial-card-position hidden">
+
+                        <div class="projects__behind-card">
+
+                        </div>
+
+                        <div class="projects__card">
+
+                            <div class="projects__card-top">
+                                <?xml version="1.0" encoding="UTF-8"?>
+
+                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="64px" height="64px" viewBox="0 0 48 48" id="a"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <defs>
+
+                                        <style>
+                                            .b {
+                                                fill: none;
+                                                stroke: #000000;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                            }
+                                        </style>
+
+                                    </defs>
+
+                                    <polyline class="b" points="29.1779 28.4062 32.9209 32.1492 39.7392 25.3308" />
+
+                                    <g>
+
+                                        <path class="b"
+                                            d="m41.6801,13.015h-16.91c-2-.1-5.93-4.23-8.19-4.23H6.6801c-1.204-.0003-2.1803.9754-2.1806,2.1794,0,.0169.0002.0337.0006.0506h0v7.29h39v-3.42c.0221-1.0104-.7791-1.8475-1.7895-1.8696-.0102-.0002-.0203-.0004-.0305-.0004Z" />
+
+                                        <path class="b"
+                                            d="m4.5001,18.295v18.72c-.0111,1.2039.956,2.1889,2.1599,2.1999.0034,0,.0067,0,.0101,0h34.65c1.204,0,2.18-.9759,2.1801-2.1799,0-.0067,0-.0134,0-.0201h0v-18.72" />
+
+                                    </g>
+
+                                </svg>
+
+                            </div>
+
+                            <h3>Upcoming Project</h3>
+                            <h4>Exploring the Possibilities</h4>
+                            <p>Coming soon: innovative projects where I explore new ideas.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="projects__initial-card-position hidden">
+
+                        <div class="projects__behind-card">
+
+                        </div>
+
+                        <div class="projects__card">
+
+                            <div class="projects__card-top">
+                                <?xml version="1.0" encoding="UTF-8"?>
+
+                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="64px" height="64px" viewBox="0 0 48 48" id="a"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <defs>
+
+                                        <style>
+                                            .b {
+                                                fill: none;
+                                                stroke: #000000;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                            }
+                                        </style>
+
+                                    </defs>
+
+                                    <polyline class="b" points="29.1779 28.4062 32.9209 32.1492 39.7392 25.3308" />
+
+                                    <g>
+
+                                        <path class="b"
+                                            d="m41.6801,13.015h-16.91c-2-.1-5.93-4.23-8.19-4.23H6.6801c-1.204-.0003-2.1803.9754-2.1806,2.1794,0,.0169.0002.0337.0006.0506h0v7.29h39v-3.42c.0221-1.0104-.7791-1.8475-1.7895-1.8696-.0102-.0002-.0203-.0004-.0305-.0004Z" />
+
+                                        <path class="b"
+                                            d="m4.5001,18.295v18.72c-.0111,1.2039.956,2.1889,2.1599,2.1999.0034,0,.0067,0,.0101,0h34.65c1.204,0,2.18-.9759,2.1801-2.1799,0-.0067,0-.0134,0-.0201h0v-18.72" />
+
+                                    </g>
+
+                                </svg>
+
+                            </div>
+
+                            <h3>Upcoming Project</h3>
+                            <h4>Exploring the Possibilities</h4>
+                            <p>Coming soon: innovative projects where I explore new ideas.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="projects__initial-card-position hidden">
+
+                        <div class="projects__behind-card">
+
+                        </div>
+
+                        <div class="projects__card">
+
+                            <div class="projects__card-top">
+                                <?xml version="1.0" encoding="UTF-8"?>
+
+                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="64px" height="64px" viewBox="0 0 48 48" id="a"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <defs>
+
+                                        <style>
+                                            .b {
+                                                fill: none;
+                                                stroke: #000000;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                            }
+                                        </style>
+
+                                    </defs>
+
+                                    <polyline class="b" points="29.1779 28.4062 32.9209 32.1492 39.7392 25.3308" />
+
+                                    <g>
+
+                                        <path class="b"
+                                            d="m41.6801,13.015h-16.91c-2-.1-5.93-4.23-8.19-4.23H6.6801c-1.204-.0003-2.1803.9754-2.1806,2.1794,0,.0169.0002.0337.0006.0506h0v7.29h39v-3.42c.0221-1.0104-.7791-1.8475-1.7895-1.8696-.0102-.0002-.0203-.0004-.0305-.0004Z" />
+
+                                        <path class="b"
+                                            d="m4.5001,18.295v18.72c-.0111,1.2039.956,2.1889,2.1599,2.1999.0034,0,.0067,0,.0101,0h34.65c1.204,0,2.18-.9759,2.1801-2.1799,0-.0067,0-.0134,0-.0201h0v-18.72" />
+
+                                    </g>
+
+                                </svg>
+
+                            </div>
+
+                            <h3>Upcoming Project</h3>
+                            <h4>Exploring the Possibilities</h4>
+                            <p>Coming soon: innovative projects where I explore new ideas.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="projects__initial-card-position hidden">
+
+                        <div class="projects__behind-card">
+
+                        </div>
+
+                        <div class="projects__card">
+
+                            <div class="projects__card-top">
+                                <?xml version="1.0" encoding="UTF-8"?>
+
+                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="64px" height="64px" viewBox="0 0 48 48" id="a"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <defs>
+
+                                        <style>
+                                            .b {
+                                                fill: none;
+                                                stroke: #000000;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                            }
+                                        </style>
+
+                                    </defs>
+
+                                    <polyline class="b" points="29.1779 28.4062 32.9209 32.1492 39.7392 25.3308" />
+
+                                    <g>
+
+                                        <path class="b"
+                                            d="m41.6801,13.015h-16.91c-2-.1-5.93-4.23-8.19-4.23H6.6801c-1.204-.0003-2.1803.9754-2.1806,2.1794,0,.0169.0002.0337.0006.0506h0v7.29h39v-3.42c.0221-1.0104-.7791-1.8475-1.7895-1.8696-.0102-.0002-.0203-.0004-.0305-.0004Z" />
+
+                                        <path class="b"
+                                            d="m4.5001,18.295v18.72c-.0111,1.2039.956,2.1889,2.1599,2.1999.0034,0,.0067,0,.0101,0h34.65c1.204,0,2.18-.9759,2.1801-2.1799,0-.0067,0-.0134,0-.0201h0v-18.72" />
+
+                                    </g>
+
+                                </svg>
+
+                            </div>
+
+                            <h3>Upcoming Project</h3>
+                            <h4>Exploring the Possibilities</h4>
+                            <p>Coming soon: innovative projects where I explore new ideas.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="projects__initial-card-position hidden">
+
+                        <div class="projects__behind-card">
+
+                        </div>
+
+                        <div class="projects__card">
+
+                            <div class="projects__card-top">
+                                <?xml version="1.0" encoding="UTF-8"?>
+
+                                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                <svg width="64px" height="64px" viewBox="0 0 48 48" id="a"
+                                    xmlns="http://www.w3.org/2000/svg">
+
+                                    <defs>
+
+                                        <style>
+                                            .b {
+                                                fill: none;
+                                                stroke: #000000;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                            }
+                                        </style>
+
+                                    </defs>
+
+                                    <polyline class="b" points="29.1779 28.4062 32.9209 32.1492 39.7392 25.3308" />
+
+                                    <g>
+
+                                        <path class="b"
+                                            d="m41.6801,13.015h-16.91c-2-.1-5.93-4.23-8.19-4.23H6.6801c-1.204-.0003-2.1803.9754-2.1806,2.1794,0,.0169.0002.0337.0006.0506h0v7.29h39v-3.42c.0221-1.0104-.7791-1.8475-1.7895-1.8696-.0102-.0002-.0203-.0004-.0305-.0004Z" />
+
+                                        <path class="b"
+                                            d="m4.5001,18.295v18.72c-.0111,1.2039.956,2.1889,2.1599,2.1999.0034,0,.0067,0,.0101,0h34.65c1.204,0,2.18-.9759,2.1801-2.1799,0-.0067,0-.0134,0-.0201h0v-18.72" />
+
+                                    </g>
+
+                                </svg>
+
+                            </div>
+
+                            <h3>Upcoming Project</h3>
+                            <h4>Exploring the Possibilities</h4>
+                            <p>Coming soon: innovative projects where I explore new ideas.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="projects__show-more__container">
+                    <button>
+                        Show more
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Contact section-->
+        <section class="contact is-outer-box main__element" id="contact">
+
+            <div class="contact__inner  is-inner-box">
+
+                <h2 class="contact__title">Talk to me</h2>
+
+                <form class="contact_form"
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSdocrRZu052x2-YdQ6Uoe2LnX9UigGc9lXzWTEBRBtPnzO5Sw/formResponse"
+                    method="POST" novalidate>
+
+                    <div class="contact__form-components-wrap">
+
+                        <label for="name">Name:</label>
+
+                        <input class="field" type="text" id="name" placeholder="Enter your name here."
+                            name="entry.2005620554">
+
+                    </div>
+
+                    <div class="contact__form-components-wrap">
+
+                        <label for="email">Email:</label>
+
+                        <input class="field" type="email" id="email" placeholder="Email address goes here."
+                            name="entry.1045781291" required>
+
+                    </div>
+
+                    <div class="contact__form-components-wrap">
+
+                        <label for="phone">Phone:</label>
+
+                        <input class="field" type="tel" id="phone" placeholder="Your phone number goes here (optional)."
+                            name="entry.1166974658">
+
+                    </div>
+
+                    <div class="contact__form-components-wrap">
+
+                        <label for="message">Message:</label>
+
+                        <textarea class="field not-scalable" id="message" placeholder="Enter message here."
+                            name="entry.839337160"></textarea>
+
+                    </div>
+
+                    <div class="button_wrap">
+
+                        <button class="submit" type="submit">Send message</button>
+
+                    </div>
+
+                </form>
+
+
+                <!--
+            Here I have the side links representing the social media links and
+            my email link
+        -->
+                <section class="social">
+                    <!--add some extra links to my social media accounts-->
+                    <div class="contacts__social-box side-links">
+                        <ul>
+                            <li>
+                                <a class="link" href="https://www.facebook.com/profile.php?id=100093605899071"
+                                    target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-facebook">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://twitter.com/BZafiescu" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-twitter">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://github.com/BogdanZafiescu" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-github">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.linkedin.com/in/bogdan-zafiescu-3630841dsa6a/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-linkedin">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                        <rect x="2" y="9" width="4" height="12" />
+                                        <circle cx="4" cy="4" r="2" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="email side-links">
+                        <a href="mailto:recipient@example.com">
+                            bogdanzafiescu@outlook.com
+                        </a>
+                    </div>
+                </section>
+        </section>
+
+
+
+
+        <!--Container for the background particles-->
+        <div class="particles"
+            style="width: 100vw;height: 100vh;position:fixed;top: 0;z-index: -2;background-color: black;"
+            id="particles-js">
+        </div>
+
+        <!--This container will be displayed only when the hamburger menu is clicked-->
+        <section class="hidden-menu">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tech">Tech</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="pages/cv.html" download>Resume</a></li>
+            </ul>
+        </section>
+
+        <!--
+            Shadow effects used at the dop and bottom of the page
+            PS: The top one is just for test purpouse only
+        -->
+
+        <!-- <section class="overlay top"></section> -->
+        <section class="overlay bottom"></section>
+
+        <!--Preloader-->
+        <!--This section will be shown before all elements will be displayed-->
+        <section class="preloader__outer">
+            <h1>Loading content ... </h1>
+            <div class="preloader__box">
+
+                <div class="preloader">
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="base" id="foot">
+        <p>Crafted with passion by &nbsp;</p>
+        <h4>&copy;&nbsp;Bogdan Zafiescu 2025</h4>
+    </footer>
+
+
+    <!-- Popup HTML -->
+    <!-- Popup message -->
+    <div id="construction-popup" class="popup-overlay">
+        <div class="popup-content">
+            <h2>Site Under Construction</h2>
+            <p>This website is currently under development. You might experience some glitches.</p>
+            <button id="close-popup">Got it</button>
+        </div>
+    </div>
+
+    <!-- Optional click sound -->
+    <audio id="click-sound" preload="auto">
+        <source src="assets/sounds/click.mp3" type="audio/mpeg">
+    </audio>
+
+
+
+
+    <script src="js/popup.js"></script>
+    <script src="js/sound.js"></script>
+    <script src="js/elements-fadein.js"></script>
+    <script src="js/progress.js"></script>
+    <script src="js/nav-bar.js"></script>
+    <script src="js/toggle-hamburger.js"></script>
+    <script src="js/tab-menu-content.js"></script>
+    <script src="js/tab-menu-scroll.js"></script>
+    <script src="js/home-button.js" type="text/javascript"></script>
+    <script src="js/skill-ctrl.js"></script>
+    <script src="js/show-more.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script src="js/intro-animations.js"></script>
+    <script src="particles.js-master/demo/js/app.js"></script>
+
+
+</body>
+
+</html>

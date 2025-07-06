@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bogdan Zafiescu - Cyberpunk CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: 'Share Tech Mono', monospace;
+      background: radial-gradient(circle at center, #0a0a0a 0%, #000000 100%);
+      color: #39ff14;
+    }
+
+    .cv-container {
+      max-width: 960px;
+      margin: auto;
+      border: 2px solid #00ffff44;
+      box-shadow: 0 0 20px #00ffff33;
+      padding: 2rem;
+      background: #111;
+      border-radius: 12px;
+      position: relative;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #ff00ff88;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+    }
+
+    .profile-pic {
+      width: 160px;
+      height: 200px;
+      border: 3px solid #ff00ff;
+      border-radius: 12px;
+      background: url('poza.png') no-repeat center center;
+      background-size: cover;
+      box-shadow: 0 0 15px #ff00ffaa;
+    }
+
+    .info {
+      flex: 1;
+      margin-right: 2rem;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+      margin-bottom: 0.2em;
+    }
+
+    .glitch {
+      animation: glitch 1.5s infinite;
+      display: inline-block;
+    }
+
+    @keyframes glitch {
+      0% { text-shadow: 2px 0 red, -2px 0 cyan; }
+      20% { text-shadow: -2px 0 magenta, 2px 0 lime; }
+      40% { text-shadow: 2px 0 yellow, -2px 0 magenta; }
+      60% { text-shadow: -2px 0 red, 2px 0 cyan; }
+      80% { text-shadow: 2px 0 green, -2px 0 magenta; }
+      100% { text-shadow: -2px 0 blue, 2px 0 yellow; }
+    }
+
+    .terminal {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 0.5rem;
+      color: #39ff14;
+      font-size: 0.95rem;
+    }
+
+    .cmd::before {
+      content: '> ';
+      color: #ff00ff;
+    }
+
+    h2 {
+      color: #ff00ff;
+      border-left: 4px solid #ff00ff;
+      padding-left: 0.5rem;
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+    }
+
+    .section {
+      margin-bottom: 1.5rem;
+    }
+
+    .highlight {
+      color: #00ffff;
+    }
+
+    a {
+      color: #39ff14;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-shadow: 0 0 5px #fff;
+    }
+
+    .footer {
+      font-size: 0.8rem;
+      color: #666;
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    @media (max-width: 720px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .info {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+
+      .profile-pic {
+        align-self: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cv-container">
+    <div class="header">
+      <div class="info">
+        <h1><span class="glitch">Bogdan Zafiescu</span></h1>
+        <div class="terminal">
+          <span class="cmd">whoami</span><br />
+          Location: <span class="highlight">Bucharest, Romania</span><br />
+          Phone: <a href="tel:+40730662070">+40 730 662 070</a><br />
+          Email: <a href="mailto:bogdanzafiescu@outlook.com">bogdanzafiescu@outlook.com</a>
+        </div>
+      </div>
+      <div class="profile-pic"></div>
+    </div>
+
+    <div class="section">
+      <h2>Summary</h2>
+      <p>Reliable and detail-oriented IT professional with experience in desktop support, software troubleshooting, and foundational networking in Windows environments and Linux. Skilled in configuring and maintaining workstations, performing system backups, and resolving a large range of hardware and software issues. Familiar with Linux (Ubuntu) through self-directed learning and certified in NDG Linux Essentials. Currently pursuing the Cisco Certified Support Technician (CCST) Networking certification to extend networking experience. Additional competence in Java programming and front-end web development (HTML, CSS, JavaScript). Multilingual with good problem-solving abilities and user support.</p>
+    </div>
+
+    <div class="section">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><span class="highlight">Operating Systems:</span> Windows 10/11 Pro, Linux (CLI)</li>
+        <li><span class="highlight">Hardware:</span> PC hardware assembly, upgrades, and maintenance</li>
+        <li><span class="highlight">Networking:</span> Subnetting, TCP/IP, DNS, DHCP, routers, HTTP, FTP, SMTP, SSH; CLI tools (ipconfig, ping, arp, tracert, nslookup); Cisco Packet Tracer</li>
+        <li><span class="highlight">Programming:</span> Java, HTML, CSS, JavaScript, basic Bash</li>
+        <li><span class="highlight">IT Tasks:</span> Backup management, system imaging, software troubleshooting</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Work Experience</h2>
+      <div class="terminal">
+        <span class="cmd">cd Casa_Schiller</span><br />
+        <strong>IT Support & Digital Operations Specialist</strong> | Jan 2025 - Present<br />
+        * Maintain desktop computers and peripherals (printers, scanners, etc.)<br />
+        * Perform regular system checks and manage user accounts<br />
+        * Install and configure software applications and operating systems<br />
+        * Monitor and upgrade hardware components<br />
+        * Configure and maintain local networks and shared resources<br />
+        * Create and test system clones and file backups<br />
+        * Administer WordPress website and code occasionally (HTML/CSS/JS)<br />
+        * Update website content, optimize for mobile, and maintain backups<br />
+        * Design posters, banners, and visual assets<br />
+        * Manage YouTube channel and upload content<br />
+        * Administer email accounts, troubleshoot issues, and configure clients<br />
+        * Set up and maintain AV equipment for meetings and events<br />
+        * Maintain inventory for IT assets
+        <br /><br />
+        <span class="cmd">cd Freelance</span><br />
+        <strong>Career Break with Occasional Freelance Tech Projects</strong> | Apr 2022 - Dec 2024<br />
+        * Explored IT and programming through self-study and informal projects<br />
+        * Engaged in media-related tech activities (details available upon request)
+        <br /><br />
+        <span class="cmd">cd Syncreon</span><br />
+        <strong>Quality Control Technician</strong> | Feb 2020 - Mar 2022<br />
+        * Conducted visual and functional inspections for Apple products<br />
+        * Tested software and hardware to Apple standards<br />
+        * Documented and reported issues
+        <br /><br />
+        <span class="cmd">cd Intrarom</span><br />
+        <strong>Test Technician (Fixed Wireless Access)</strong> | Jan 2019 - Jan 2020<br />
+        * Configured and tested wireless network equipment<br />
+        * Verified functionality and reported defects<br />
+        * Collaborated with engineers to resolve issues
+        <br /><br />
+        <strong>Other Roles:</strong><br />
+        * Gift Shop Attendant – Margaritaville, USA (2017-2018)<br />
+        * Cosmetics Sales Associate – Soap & Co, UK (2016-2017)<br />
+        * Assistant Waiter – Carnival Cruise Lines, USA (2013-2015)
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Education & Certifications</h2>
+      <ul>
+        <li><strong>CCST Networking</strong> – Cisco Networking Academy (In Progress)</li>
+        <li><strong>NDG Linux Essentials</strong> – Cisco Networking Academy, 2024</li>
+        <li><strong>NDG Linux Unhatched</strong> – Cisco Networking Academy, 2021</li>
+        <li><strong>Java Programming Fundamentals</strong> – Bitacademy, 2019</li>
+        <li><strong>Front-End Web Development (HTML, CSS, JS)</strong> – Bitacademy, 2021</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Languages</h2>
+      <ul>
+        <li><span class="highlight">Romanian:</span> Native</li>
+        <li><span class="highlight">English:</span> C1 Listening/Reading, B2 Speaking/Writing</li>
+        <li><span class="highlight">Italian:</span> Conversational</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Future Plans</h2>
+      <ul>
+        <li>Build professional-grade personal homelab for simulations and experiments</li>
+        <li>Earn <strong>Cisco Certified Network Associate (CCNA)</strong> certification</li>
+        <li>Advance toward <strong>Cisco Certified Network Professional (CCNP)</strong> certification</li>
+        <li>Expand scripting automation skills with Python and PowerShell</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      Designed and coded by Bogdan Zafiescu | Compiled: <span class="highlight">2025-07-05</span>
+    </div>
+  </div>
+
+</body>
+</html>
