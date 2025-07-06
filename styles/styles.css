@@ -603,7 +603,7 @@ header {
     text-align: center;
     margin-bottom: 2rem;
     font-family: 'Share Tech Mono', monospace;
-    border-bottom: 3px solid #cdff2e;
+    border-bottom: 3px solid #292f16;
     display: inline-block;
     padding-bottom: 0.5rem;
     color: white;
@@ -625,8 +625,8 @@ header {
     min-width: 200px;
     aspect-ratio: 1;
     overflow: hidden;
-    border: 3px solid #8ae234;
-    box-shadow: 0 0 15px rgba(138, 226, 52, 0.5);
+    border: 3px solid #292f16;
+    box-shadow: 0 0 10px rgba(138, 226, 52, 0.5);
 }
 
 /* Overlay effect on avatar (optional) */
