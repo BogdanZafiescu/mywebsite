@@ -29,16 +29,52 @@ body {
 
     user-select: none;
 }
+/*
 
+Base / Background
+Dark Background: #0D0D0D – Deep black, perfect for contrast and glow effects
+
+Panel Background / Soft Black: #1A1A1A – Slightly lighter black for sections/cards
+
+Primary Neon Accents
+Electric Cyan: #00FFF7 – Futuristic and sharp, great for buttons or highlights
+
+Neon Magenta: #FF2DAE – High-energy, great for hover effects or headings
+
+Laser Purple: #7F00FF – Used for gradients or depth effects
+
+Secondary Accents
+Lime Green: #39FF14 – Optional highlight or warning glow
+
+Hot Orange: #FF5F1F – For call-to-action buttons or alerts
+
+Text Colors
+Main Text (Light Gray): #E0E0E0
+
+Muted Text: #999999
+
+
+GetColors
+*/
 
 :root {
-    --main-color: #CDFF2E;
-    --main-color-tr: #ceff2e4f;
-    --second-color: #543BFF;
-    --second-color-tr: #553bffbe;
-    --third-color: #4232B3;
-    --fourth-color: #ff4b00;
-    --fifth-color: #ff7816;
+    --main-color: #64ffda;
+    /* Mint-teal (accent) */
+    --main-color-tr: #64ffda4f;
+
+    --second-color: #0a192f;
+    /* Deep navy (background base) */
+    --second-color-tr: #0a192fb0;
+
+    --third-color: #112240;
+    /* Muted dark blue-gray (section background) */
+
+    --fourth-color: #8892b0;
+    /* Cool gray-blue (text) */
+
+    --fifth-color: #FF6489;
+    /* Warm golden-orange (CTA/button) */
+
 }
 
 /*MAIN ELEMENTS FADEIN*/
@@ -78,7 +114,6 @@ body {
 }
 
 .nav-bar li.drop-navs {
-
     animation: dropnavs .3s forwards ease-in-out;
 }
 
@@ -107,7 +142,7 @@ body {
 }
 
 .nav-bar__home-wrap svg {
-    fill: var(--second-color);
+    fill: var(--main-color-tr);
     width: 36px;
     height: 36px;
     padding: 6px;
@@ -120,12 +155,21 @@ body {
     fill: var(--fifth-color);
 }
 
+.nav-button:active{
+    color: var(--fifth-color)!important;
+    border:1px solid var(--fifth-color)!important;
+}
+
 .nav-bar__home-wrap svg:hover {
     border-color: var(--main-color);
     padding: 4px;
     background-color: rgba(0, 0, 0, 0.81);
     fill: var(--main-color);
     border-radius: 5px;
+}
+
+.nav-bar__home-wrap a:active{
+    border-color: var(--fifth-color);
 }
 
 .nav-bar__other-links-wrap {
@@ -388,7 +432,7 @@ header {
     height: 100%;
     z-index: -1;
     /* behind the content */
-    background: linear-gradient(135deg, #1a1f36, #ff7716ad);
+    background: linear-gradient(135deg, var(--second-color,--main-color));
     opacity: 0.9;
     pointer-events: none;
     /* don't block clicks */
@@ -441,15 +485,7 @@ header {
     margin-top: 3rem;
 }
 
-.arrow {
-    width: 20px;
-    height: 20px;
-    border-left: 3px solid white;
-    border-bottom: 3px solid white;
-    transform: rotate(-45deg);
-    animation: bounce 2s infinite;
-    margin: 0 auto;
-}
+
 
 /* Animations */
 @keyframes bounce {
@@ -490,9 +526,9 @@ header {
 .arrow {
     width: 20px;
     height: 20px;
-    border-bottom: 4px solid var(--second-color);
-    border-right: 4px solid var(--second-color);
-    transform: rotate(45deg);
+    border-bottom: 4px solid var(--main-color-tr);
+    border-right: 4px solid var(--main-color-tr);
+    /* transform: rotate(45deg); */
     animation: arrowAnimation 1s infinite;
 }
 
@@ -613,12 +649,12 @@ header {
 
 /* Title with neon underline */
 .about__title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
     text-align: center;
     margin-bottom: 2rem;
-    font-family: 'Share Tech Mono', monospace;
-    border-bottom: 3px solid #292f16;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, monospace;
+    border-bottom: 2px solid var(--main-color-tr);
     display: inline-block;
     padding-bottom: 0.5rem;
     color: white;
@@ -640,8 +676,8 @@ header {
     min-width: 200px;
     aspect-ratio: 1;
     overflow: hidden;
-    border: 3px solid #292f16;
-    box-shadow: 0 0 10px rgba(138, 226, 52, 0.5);
+    border: 3px solid var(--main-color-tr);
+    box-shadow: 0 0 4px var(--main-color-tr);
 }
 
 /* Overlay effect on avatar (optional) */
@@ -683,7 +719,7 @@ header {
     font-size: 1.8rem;
     margin-bottom: 1rem;
     text-align: center;
-    color: #8ae234;
+    color: var(--main-color-tr);
     font-family: 'Share Tech Mono', monospace;
 }
 
@@ -931,7 +967,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-top: 0.25rem;
-    border-top: 3px solid var(--main-color);
+    border-top: 2px solid var(--main-color);
     margin-bottom: 1.5rem;
     flex-wrap: wrap;
 
@@ -942,11 +978,11 @@ header {
     color: #ffffff;
     ;
 }
-
+/*Book*/
 .tech__description {
     font-size: 1rem;
     text-align: left;
-    color: var(--second-color);
+    color: var(--fifth-color);
 }
 
 .tech__tabs-container {
@@ -1285,7 +1321,7 @@ header {
 .projects__initial-card-position:hover .projects__card-top path,
 .projects__initial-card-position:hover .projects__card-top polyline {
 
-    stroke: #CDFF2E;
+    stroke: var(--main-color);
     border-radius: 5px;
     border: 1px ridge var(--fourth-color);
 }
@@ -1396,6 +1432,8 @@ h4 {
 .contact__form-components-wrap input,
 .contact__form-components-wrap textarea {
     margin: 0 0 .5rem;
+    color: var(--fourth-color);
+    font-weight: 600;
 }
 
 .contact__form-components-wrap input,
@@ -1591,7 +1629,7 @@ input:-webkit-autofill {
     animation: summonSideLinks 2s forwards 1 ease-out;
 }
 
-/*bookmark*/
+
 @keyframes summonSideLinks {
     0% {
         opacity: 0;
@@ -1854,112 +1892,3 @@ input:-webkit-autofill {
 
 
 
- #floating-audio-player {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #222;
-            color: white;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-            max-width: 300px;
-            font-family: Arial, sans-serif;
-        }
-        #song-title {
-            margin-bottom: 10px;
-            font-size: 14px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        #progress-container {
-            width: 100%;
-            height: 5px;
-            background: #555;
-            border-radius: 5px;
-            margin: 10px 0;
-            cursor: pointer;
-        }
-        #progress-bar {
-            height: 100%;
-            background: #1db954;
-            width: 0;
-            border-radius: 5px;
-        }
-        #time-display {
-            font-size: 12px;
-            margin-bottom: 10px;
-        }
-        #volume-container {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            margin-bottom: 10px;
-        }
-        #volume-slider {
-            width: 80px;
-        }
-        #playlist {
-            max-height: 100px;
-            overflow-y: auto;
-            margin-bottom: 10px;
-            font-size: 12px;
-        }
-        #playlist div {
-            padding: 5px;
-            cursor: pointer;
-            border-radius: 3px;
-        }
-        #playlist div:hover {
-            background: #333;
-        }
-        #playlist .selected {
-            background: #1db954;
-        }
-        button {
-            background: #333;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 14px;
-            margin-right: 5px;
-        }
-        button:hover {
-            background: #444;
-        }
-        button.active {
-            background: #1db954;
-        }
-        button:focus {
-            outline: none;
-            box-shadow: 0 0 0 2px #1db954;
-        }
-        #error-message {
-            color: #ff4d4d;
-            font-size: 12px;
-            margin-top: 5px;
-            display: none;
-        }
-        #toggle-player-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-        }
-        #floating-audio-player.hidden {
-            display: none;
-        }
-        @media (max-width: 600px) {
-            #floating-audio-player {
-                bottom: 10px;
-                right: 10px;
-                max-width: 90%;
-            }
-            #toggle-player-btn {
-                bottom: 10px;
-                right: 10px;
-            }
-        }

@@ -23,8 +23,8 @@ function shrinkNav() {
         nav.style.backgroundColor = 'rgba(0, 0, 0, .900)';
         navbarSvg.classList.add('hasFifthColor');
         navBarLine.classList.add('hasFifthColor');
-        progressCtnerBar.style.backgroundColor ="#CDFF2E";
-        progressCtner.style.backgroundColor = '#543BFF';
+        progressCtnerBar.style.backgroundColor ="#64ffda";
+        progressCtner.style.backgroundColor = '#8892b0';
     } else {
         progressCtnerBar.style.backgroundColor ="transparent";
         nav.style.color = 'white';
