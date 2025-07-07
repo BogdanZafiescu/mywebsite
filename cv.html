@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Bogdan Zafiescu - Cyberpunk CV</title>
@@ -67,12 +68,29 @@
     }
 
     @keyframes glitch {
-      0% { text-shadow: 2px 0 red, -2px 0 cyan; }
-      20% { text-shadow: -2px 0 magenta, 2px 0 lime; }
-      40% { text-shadow: 2px 0 yellow, -2px 0 magenta; }
-      60% { text-shadow: -2px 0 red, 2px 0 cyan; }
-      80% { text-shadow: 2px 0 green, -2px 0 magenta; }
-      100% { text-shadow: -2px 0 blue, 2px 0 yellow; }
+      0% {
+        text-shadow: 2px 0 red, -2px 0 cyan;
+      }
+
+      20% {
+        text-shadow: -2px 0 magenta, 2px 0 lime;
+      }
+
+      40% {
+        text-shadow: 2px 0 yellow, -2px 0 magenta;
+      }
+
+      60% {
+        text-shadow: -2px 0 red, 2px 0 cyan;
+      }
+
+      80% {
+        text-shadow: 2px 0 green, -2px 0 magenta;
+      }
+
+      100% {
+        text-shadow: -2px 0 blue, 2px 0 yellow;
+      }
     }
 
     .terminal {
@@ -138,15 +156,30 @@
         align-self: center;
       }
     }
+    #download_file{
+      font-size: 2rem;
+    }
   </style>
 </head>
+
 <body>
 
   <div class="cv-container">
     <div class="header">
       <div class="info">
-        <h1><span class="glitch">Bogdan Zafiescu</span></h1>
+        <h1><span class="glitch">Bogdan Zafiescu</span><span><a href="extra/bogdanzafiescu_github.pdf" download>
+              <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17 9.00195C19.175 9.01406 20.3529 9.11051 21.1213 9.8789C22 10.7576 22 12.1718 22 15.0002V16.0002C22 18.8286 22 20.2429 21.1213 21.1215C20.2426 22.0002 18.8284 22.0002 16 22.0002H8C5.17157 22.0002 3.75736 22.0002 2.87868 21.1215C2 20.2429 2 18.8286 2 16.0002L2 15.0002C2 12.1718 2 10.7576 2.87868 9.87889C3.64706 9.11051 4.82497 9.01406 7 9.00195"
+                  stroke="lime" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M12 2L12 15M12 15L9 11.5M12 15L15 11.5" stroke="lime" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span id="download_file">DOWNLOAD .pdf</span>
+            </a>
+          </span></h1>
         <div class="terminal">
+
           <span class="cmd">whoami</span><br />
           Location: <span class="highlight">Bucharest, Romania</span><br />
           Phone: <a href="tel:+40730662070">+40 730 662 070</a><br />
@@ -159,7 +192,13 @@
 
     <div class="section">
       <h2>Summary</h2>
-      <p>Reliable and detail-oriented IT professional with experience in desktop support, software troubleshooting, and foundational networking in Windows environments and Linux. Skilled in configuring and maintaining workstations, performing system backups, and resolving a large range of hardware and software issues. Familiar with Linux (Ubuntu) through self-directed learning and certified in NDG Linux Essentials. Currently pursuing the Cisco Certified Support Technician (CCST) Networking certification to extend networking experience. Additional competence in Java programming and front-end web development (HTML, CSS, JavaScript). Multilingual with good problem-solving abilities and user support.</p>
+      <p>Reliable and detail-oriented IT professional with experience in desktop support, software troubleshooting, and
+        foundational networking in Windows environments and Linux. Skilled in configuring and maintaining workstations,
+        performing system backups, and resolving a large range of hardware and software issues. Familiar with Linux
+        (Ubuntu) through self-directed learning and certified in NDG Linux Essentials. Currently pursuing the Cisco
+        Certified Support Technician (CCST) Networking certification to extend networking experience. Additional
+        competence in Java programming and front-end web development (HTML, CSS, JavaScript). Multilingual with good
+        problem-solving abilities and user support.</p>
     </div>
 
     <div class="section">
@@ -167,7 +206,8 @@
       <ul>
         <li><span class="highlight">Operating Systems:</span> Windows 10/11 Pro, Linux (CLI)</li>
         <li><span class="highlight">Hardware:</span> PC hardware assembly, upgrades, and maintenance</li>
-        <li><span class="highlight">Networking:</span> Subnetting, TCP/IP, DNS, DHCP, routers, HTTP, FTP, SMTP, SSH; CLI tools (ipconfig, ping, arp, tracert, nslookup); Cisco Packet Tracer</li>
+        <li><span class="highlight">Networking:</span> Subnetting, TCP/IP, DNS, DHCP, routers, HTTP, FTP, SMTP, SSH; CLI
+          tools (ipconfig, ping, arp, tracert, nslookup); Cisco Packet Tracer</li>
         <li><span class="highlight">Programming:</span> Java, HTML, CSS, JavaScript, basic Bash</li>
         <li><span class="highlight">IT Tasks:</span> Backup management, system imaging, software troubleshooting</li>
       </ul>
@@ -252,4 +292,5 @@
   </div>
 
 </body>
+
 </html>

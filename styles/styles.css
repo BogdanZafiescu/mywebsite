@@ -432,7 +432,7 @@ header {
     height: 100%;
     z-index: -1;
     /* behind the content */
-    background: linear-gradient(135deg, var(--second-color,--main-color));
+    background: radial-gradient(135deg, var(--main-color-tr,--third-color));
     opacity: 0.9;
     pointer-events: none;
     /* don't block clicks */
@@ -720,7 +720,7 @@ header {
     margin-bottom: 1rem;
     text-align: center;
     color: var(--main-color-tr);
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, monospace;
 }
 
 .self-assertion__container {
@@ -999,6 +999,7 @@ header {
     display: none;
     background-color: transparent;
     border: 1px solid var(--main-color);
+    border-radius: 20px;
     width: 10vw;
     padding: 0.5rem;
     cursor: pointer;
@@ -1027,6 +1028,7 @@ header {
     flex-wrap: nowrap;
     overflow-x: auto;
     border: 1px solid var(--main-color);
+    border-radius: 10px;
     background-color: #111;
     padding: 0.5rem;
     scrollbar-width: thin;
@@ -1397,7 +1399,7 @@ h4 {
     background-size: 50px 50px;
 
     color: #333;
-    /* Dark text for contrast */
+    /* Dark text for contrast */    
     padding: 4rem 1rem;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -1854,7 +1856,7 @@ input:-webkit-autofill {
 
 /* Popup box */
 .popup-content {
-    background: #fff;
+    background:  var(--fourth-color);;
     color: #222;
     padding: 2rem 3rem;
     border-radius: 10px;
@@ -1875,7 +1877,7 @@ input:-webkit-autofill {
 }
 
 .popup-content button {
-    background: #3498db;
+    background: var(--third-color);
     color: white;
     border: none;
     padding: 0.6rem 1.2rem;
@@ -1886,9 +1888,17 @@ input:-webkit-autofill {
 }
 
 .popup-content button:hover {
-    background: #2980b9;
+    background: var(--main-color-tr);
+}
+
+.popup-content button:active{
+    color: var(--fifth-color);
 }
 
 
 
 
+#popup-email{
+    color: var(--second-color);
+    font-weight: bolder;
+}
