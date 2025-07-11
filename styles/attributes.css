@@ -1,0 +1,74 @@
+:root {
+    --main-color: #64ffda;
+    /* Mint-teal (accent) */
+    --main-color-tr: #64ffda4f;
+
+    --second-color: #0a192f;
+    /* Deep navy (background base) */
+    --second-color-tr: #0a192fb0;
+
+    --third-color: #112240;
+    /* Muted dark blue-gray (section background) */
+
+    --fourth-color: #8892b0;
+    /* Cool gray-blue (text) */
+
+    --fifth-color: #FF6489;
+    /* Warm golden-orange (CTA/button) */
+
+}
+
+* {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    /*disable text selection*/
+    -webkit-user-select: none;
+
+    -moz-user-select: none;
+
+    -ms-user-select: none;
+
+    user-select: none;
+}
+
+
+.attributes{
+    max-width: 1000px ;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+    height: 100vh;
+}
+
+.attributes-title{
+    border-top: 2px solid var(--main-color);
+    padding-top: .3em;
+    font-size: 1.5em;
+}
+
+.attributes-title span {
+    color: var(--fifth-color );
+}
+
+.additional-tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.additional-tech>div {
+    flex: 1 1 200px;
+    padding: 1rem;
+    background-color: #111;
+    border-radius: 8px;
+    border: 1px solid var(--main-color);
+}
+
+.additional-tech ul {}
+
+.additional-tech ul li {
+    padding-top: 0.5rem;
+    color: #ccc;
+    font-size: clamp(0.875rem, 2vw, 1rem);
+
+}
