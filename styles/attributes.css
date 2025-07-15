@@ -31,21 +31,44 @@
 }
 
 
-.attributes{
-    max-width: 1000px ;
+.attributes {
+    max-width: 1000px;
     margin: 0 auto;
     padding: 6rem 2rem;
     height: 100vh;
+
 }
 
-.attributes-title{
+.attributes-wrapper {
+    height: 100vh;
+    background: radial-gradient(circle at center,
+            rgba(255, 255, 255, 0.05) 0%,
+            rgba(255, 255, 255, 0.02) 50%,
+            rgba(0, 0, 0, 0.05) 100%),
+        linear-gradient(45deg,
+            rgba(255, 255, 255, 0.03) 25%,
+            transparent 25%,
+            transparent 75%,
+            rgba(255, 255, 255, 0.03) 75%,
+            rgba(255, 255, 255, 0.03)),
+        linear-gradient(-45deg,
+            rgba(255, 255, 255, 0.03) 25%,
+            transparent 25%,
+            transparent 75%,
+            rgba(255, 255, 255, 0.03) 75%,
+            rgba(255, 255, 255, 0.03));
+    background-size: cover, 40px 40px, 40px 40px;
+    background-blend-mode: overlay;
+}
+
+.attributes-title {
     border-top: 2px solid var(--main-color);
     padding-top: .3em;
     font-size: 1.5em;
 }
 
 .attributes-title span {
-    color: var(--fifth-color );
+    color: var(--fifth-color);
 }
 
 .additional-tech {
