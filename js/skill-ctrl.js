@@ -4,11 +4,12 @@ const skillBar = document.querySelector('.tech__skill__inner');
 const currentSelectedSkill = document.querySelectorAll('.tech__box_info');
 const tabButtons = document.querySelectorAll('.tab-buttons');
 const skillPercentages = {
-  html: 90,
-  'css 3': 95,
-  javascript: 70,
-  linux: 40,
-  photoshop: 20
+  html: 60,
+  'css 3': 70,
+  javascript: 50,
+  linux: 45,
+  photoshop: 30,
+  java: 50
 }
 
 let lastSkill = 'html';
