@@ -1,146 +1,205 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Bogdan Zafiescu - Cyberpunk CV</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <title>Bogdan Zafiescu - CV</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; }
-    body { margin:0; padding:2rem; font-family:'Share Tech Mono',monospace; background:radial-gradient(circle at center,#0a0a0a 0%,#000 100%); color:#39ff14; }
-    .cv-container { max-width:960px; margin:auto; border:2px solid #00ffff44; box-shadow:0 0 20px #00ffff33; padding:2rem; background:#111; border-radius:12px; }
-    .header { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; border-bottom:2px solid #ff00ff88; margin-bottom:2rem; padding-bottom:1rem; }
-    .profile-pic { width:160px; height:200px; border:3px solid #ff00ff; border-radius:12px; background:url('poza.png') center/cover no-repeat; box-shadow:0 0 15px #ff00ffaa; }
-    .info { flex:1; margin-right:2rem; }
-    h1 { font-size:2.8rem; color:#00ffff; text-shadow:0 0 10px #00ffff; margin-bottom:.2em; }
-    .glitch { animation:glitch 1.5s infinite; display:inline-block; }
-    @keyframes glitch { 0%{text-shadow:2px 0 red,-2px 0 cyan} 20%{text-shadow:-2px 0 magenta,2px 0 lime} 40%{text-shadow:2px 0 yellow,-2px 0 magenta} 60%{text-shadow:-2px 0 red,2px 0 cyan} 80%{text-shadow:2px 0 green,-2px 0 magenta} 100%{text-shadow:-2px 0 blue,2px 0 yellow} }
-    .terminal { background:#1a1a1a; border:1px solid #333; padding:1rem; border-radius:8px; margin-top:.5rem; color:#39ff14; font-size:.95rem; }
-    .cmd::before { content:'> '; color:#ff00ff; }
-    h2 { color:#ff00ff; border-left:4px solid #ff00ff; padding-left:.5rem; margin-top:2rem; font-size:1.2rem; text-transform:uppercase; }
-    .section { margin-bottom:1.5rem; }
-    .highlight { color:#00ffff; }
-    a { color:#39ff14; text-decoration:none; }
-    a:hover { text-shadow:0 0 5px #fff; }
-    .footer { font-size:.8rem; color:#666; margin-top:3rem; text-align:center; }
-    @media(max-width:720px){ .header{flex-direction:column;align-items:flex-start} .info{margin-right:0;margin-bottom:1rem} .profile-pic{align-self:center} }
-    #download_file { font-size:2rem; }
+    :root {
+      --main-color: #64ffda;
+      --main-color-tr: #64ffda4f;
+      --second-color: #0a192f;
+      --second-color-tr: #0a192fb0;
+      --third-color: #112240;
+      --fourth-color: #8892b0;
+      --fifth-color: #FF6489;
+      --bg-primary: #0a192f;
+      --bg-secondary: #112240;
+      --bg-card: #172a45;
+      --text-primary: #ccd6f6;
+      --text-secondary: #8892b0;
+      --text-muted: #63718a;
+      --border: #233554;
+      --glow: rgba(100, 255, 218, 0.3);
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Calibri', 'Segoe UI', sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-secondary);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: var(--bg-secondary);
+      padding: 30px;
+      border-radius: 8px;
+      border-left: 5px solid var(--main-color);
+      box-shadow: 0 0 30px var(--glow);
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 {
+      font-size: 3rem;
+      color: var(--main-color);
+      text-shadow: 0 0 10px var(--glow);
+    }
+    .download-pdf {
+      color: var(--main-color);
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid var(--main-color);
+      box-shadow: 0 0 20px var(--glow);
+    }
+    .contact { font-size: 0.95rem; margin-top: 10px; }
+    .contact i { color: var(--main-color); margin-right: 8px; }
+    a { color: var(--main-color); text-decoration: none; }
+    a:hover { color: #fff; }
+    h2 {
+      color: var(--main-color);
+      margin: 30px 0 15px;
+      font-size: 1.5rem;
+      border-bottom: 2px solid var(--main-color);
+      padding-bottom: 5px;
+    }
+    h3 { color: var(--text-primary); margin: 15px 0 5px; }
+    .job-title { color: var(--text-primary); font-weight: bold; }
+    .date { color: var(--fifth-color); font-size: 0.9rem; }
+    ul { margin: 10px 0 20px 20px; }
+    li { margin-bottom: 6px; }
+    li::marker { color: var(--main-color); }
+    .section { margin-bottom: 30px; }
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
   </style>
 </head>
 <body>
-
-<div class="cv-container">
-  <div class="header">
-    <div class="info">
-      <h1><span class="glitch">Bogdan Zafiescu</span><span><a href="https://bogdanzafiescu.github.io/mywebsite/extra/bogdanzafiescu_github.pdf" download="">
-        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M17 9.00195C19.175 9.01406 20.3529 9.11051 21.1213 9.8789C22 10.7576 22 12.1718 22 15.0002V16.0002C22 18.8286 22 20.2429 21.1213 21.1215C20.2426 22.0002 18.8284 22.0002 16 22.0002H8C5.17157 22.0002 3.75736 22.0002 2.87868 21.1215C2 20.2429 2 18.8286 2 16.0002L2 15.0002C2 12.1718 2 10.7576 2.87868 9.87889C3.64706 9.11051 4.82497 9.01406 7 9.00195" stroke="lime" stroke-width="1.5" stroke-linecap="round"></path>
-          <path d="M12 2L12 15M12 15L9 11.5M12 15L15 11.5" stroke="lime" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-        <span id="download_file">DOWNLOAD .pdf</span>
-      </a></span></h1>
-      <div class="terminal">
-        <span class="cmd">whoami</span><br>
-        Location: <span class="highlight">Bucharest, Romania</span><br>
-        Phone: <a href="tel:+40730662070">+40 730 662 070</a><br>
-        Email: <a href="mailto:bogdanzafiescu@outlook.com">bogdanzafiescu@outlook.com</a><br>
-        Personal Website: <a href="https://bogdanzafiescu.github.io/mywebsite/index.html">Bogdan's Website</a>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Bogdan Zafiescu</h1>
+        <div class="contact">
+          <div><i class="fas fa-map-marker-alt"></i> Bucharest, Romania</div>
+          <div><i class="fas fa-phone"></i> +40 730 662 070</div>
+          <div><i class="fas fa-envelope"></i> bogdanzafiescu@outlook.com</div>
+          <div><i class="fas fa-globe"></i> Bogdan's Website</div>
+        </div>
       </div>
+      <div>
+        <a href="bogdanzafiescu_github-final.pdf" class="download-pdf"><i class="fas fa-file-pdf"></i> DOWNLOAD .pdf</a>
+        <br><br>
+        <img src="YOUR_PHOTO_URL_HERE" alt="Bogdan Zafiescu" class="photo">
+      </div>
+    </header>
+
+    <div class="section">
+      <h2>] SUMMARY</h2>
+      <p>Detail-oriented IT Support Specialist with strong expertise in Windows 10/11 Pro desktop support, software deployment, troubleshooting, system imaging, backups, user management, and local network administration. Hands-on hardware and peripherals experience. Also comfortable with Linux (NDG Linux Essentials certified, daily personal use on home systems). Skilled in WordPress, front-end web development (HTML/CSS/JS), and basic Java. Pursuing Cisco CCST Networking, multilingual, excellent problem-solving.</p>
     </div>
-    <div class="profile-pic"></div>
-  </div>
 
-  <div class="section">
-    <h2>Summary</h2>
-    <p>IT professional with proven hands-on experience in Windows desktop support, hardware/software troubleshooting, workstation configuration, system imaging, backups, and end-user assistance. Previously worked full-time as IT Support &amp; Digital Operations Specialist at Casa Schiller (Jan 2025 – Oct 2025) and currently collaborate with them occasionally on a reduced-availability basis.<br><br>
-    Currently employed as a full-time Content Moderator at Genpact (Nov 2025 – Present).<br><br>
-    Continuous learner with completed IT-related certifications and ongoing study in networking and Linux, also bringing experience in front-end web development (HTML/CSS/JS) and Java. Detail-oriented, multilingual, and focused on developing a long-term career in Windows IT infrastructure and networking.</p>
-  </div>
-
-  <!-- rest of your sections unchanged -->
-  <div class="section">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li><span class="highlight">Operating Systems:</span> Windows 10/11 Pro, Linux (CLI)</li>
-      <li><span class="highlight">Hardware:</span> PC hardware assembly, upgrades, and maintenance</li>
-      <li><span class="highlight">Networking:</span> Subnetting, TCP/IP, DNS, DHCP, routers, HTTP, FTP, SMTP, SSH; CLI tools (ipconfig, ping, arp, tracert, nslookup); Cisco Packet Tracer</li>
-      <li><span class="highlight">Programming:</span> Java, HTML, CSS, JavaScript, basic Bash</li>
-      <li><span class="highlight">IT Tasks:</span> Backup management, system imaging, software troubleshooting</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Work Experience</h2>
-    <div class="terminal">
-      <span class="cmd">cd Genpact</span><br>
-      <strong>Content Moderator</strong> | Nov 2025 – Present<br>
-      * Review user-generated content for compliance with platform rules and community guidelines<br>
-      * Flag and remove inappropriate, harmful, or unsafe material<br>
-      * Escalate sensitive cases according to protocols<br>
-      * Apply platform policies consistently<br><br><br>
-
-      <span class="cmd">cd Casa_Schiller</span><br>
-      <strong>IT Support &amp; Digital Operations Specialist</strong> | Jan 2025 – Present (reduced availability since Nov 2025)<br>
-      * Maintain desktop computers and peripherals<br>
-      * Install and configure software and operating systems<br>
-      * Manage user accounts, backups, and system imaging<br>
-      * Configure local networks and shared resources<br>
-      * Administer WordPress site, occasional HTML/CSS/JS coding<br>
-      * Handle email, AV equipment, and IT inventory<br><br><br>
-
-      <!-- previous jobs unchanged -->
-      <span class="cmd">cd Freelance</span><br>
-      <strong>Career Break with Occasional Freelance Tech Projects</strong> | Apr 2022 – Dec 2024<br>
-      * Self-study and informal IT/programming projects<br><br><br>
-
-      <span class="cmd">cd Syncreon</span><br>
-      <strong>Quality Control Technician</strong> | Feb 2020 – Mar 2022<br>
-      * Inspected and tested Apple products<br><br><br>
-
-      <span class="cmd">cd Intrarom</span><br>
-      <strong>Test Technician (Fixed Wireless Access)</strong> | Jan 2019 – Jan 2020<br>
-      * Configured and tested wireless network equipment<br><br><br>
-
-      <strong>Other Roles:</strong><br>
-      * Chair-Lift Operator – Killington/Pico, Vermont, USA (2018–2019)<br>
-      * Gift Shop Attendant – Margaritaville, Key West, USA (2017–2018)<br>
-      * Cosmetics Sales Associate – Soap &amp; Co, London, UK (2016–2017)<br>
-      * Assistant Waiter – Carnival Cruise Lines, Miami, USA (2013–2015)
+    <div class="section">
+      <h2>] TECHNICAL SKILLS</h2>
+      <ul>
+        <li>Operating Systems: Windows 10/11 Pro, Linux (CLI)</li>
+        <li>Hardware: PC hardware assembly, upgrades, and maintenance</li>
+        <li>Networking: Subnetting, TCP/IP, DNS, DHCP, routers, HTTP, FTP, SMTP, SSH; CLI tools (ipconfig, ping, arp, tracert, nslookup); Cisco Packet Tracer</li>
+        <li>Programming: Java, HTML, CSS, JavaScript, basic Bash</li>
+        <li>IT Tasks: Backup management, system imaging, software troubleshooting</li>
+      </ul>
     </div>
-  </div>
 
-  <!-- Education, Languages, Future Plans, Footer unchanged -->
-  <div class="section">
-    <h2>Education &amp; Certifications</h2>
-    <ul>
-      <li><strong>Cisco Networking Academy – CCST Networking</strong> (In Progress)</li>
-      <li><strong>Cisco Networking Academy – NDG Linux Essentials</strong> (2024)</li>
-      <li><strong>Cisco Networking Academy – Getting Started with Cisco Packet Tracer</strong> (2024)</li>
-      <li><strong>Cisco Networking Academy – NDG Linux Unhatched</strong> (2021)</li>
-      <li><strong>Bitacademy – Frontend Web Development (JS &amp; HTML/CSS)</strong> (2021–2022)</li>
-      <li><strong>Bitacademy – Java Programming Fundamentals</strong> (2019)</li>
-    </ul>
-  </div>
+    <div class="section">
+      <h2>] WORK EXPERIENCE</h2>
+      <div><span class="job-title">IT Support & Digital Operations Specialist</span> — Casa Schiller <span class="date">Jan 2025 – Present</span></div>
+      <ul>
+        <li>Maintain desktop computers and peripherals (printers, scanners, etc.)</li>
+        <li>Perform regular system checks and manage user accounts</li>
+        <li>Install and configure software applications and operating systems</li>
+        <li>Monitor and upgrade hardware components</li>
+        <li>Configure and maintain local networks and shared resources</li>
+        <li>Create and test system clones and file backups</li>
+        <li>Administer WordPress website and code occasionally (HTML/CSS/JS)</li>
+        <li>Update website content, optimize for mobile, and maintain backups</li>
+        <li>Design posters, banners, and visual assets</li>
+        <li>Manage YouTube channel and upload content</li>
+        <li>Administer email accounts, troubleshoot issues, and configure clients</li>
+        <li>Set up and maintain AV equipment for meetings and events</li>
+        <li>Maintain inventory for IT assets</li>
+      </ul>
 
-  <div class="section">
-    <h2>Languages</h2>
-    <ul>
-      <li><span class="highlight">Romanian:</span> Native</li>
-      <li><span class="highlight">English:</span> C1 Listening/Reading, B2 Speaking/Writing</li>
-      <li><span class="highlight">Italian:</span> Conversational</li>
-    </ul>
-  </div>
+      <div><span class="job-title">Career Break with Occasional Freelance Tech Projects</span> <span class="date">Apr 2022 – Dec 2024</span></div>
+      <ul>
+        <li>Explored IT and programming through self-study and informal projects</li>
+        <li>Engaged in media-related tech activities (details available upon request)</li>
+      </ul>
 
-  <div class="section">
-    <h2>Future Plans</h2>
-    <ul>
-      <li>Earn <strong>Cisco CCNA</strong> and progress to <strong>CCNP</strong></li>
-      <li>Deepen Linux command-line and scripting (Bash/PowerShell)</li>
-      <li>Learn Python</li>
-    </ul>
-  </div>
+      <div><span class="job-title">Quality Control Technician</span> — Syncreon <span class="date">Feb 2020 – Mar 2022</span></div>
+      <ul>
+        <li>Conducted visual and functional inspections for Apple products</li>
+        <li>Tested software and hardware to Apple standards</li>
+        <li>Documented and reported issues</li>
+      </ul>
 
-  <div class="footer">
-    Designed and coded by Bogdan Zafiescu | Compiled: <span class="highlight">2025-11-18</span>
-  </div>
-</div>
+      <div><span class="job-title">Test Technician (Fixed Wireless Access)</span> — Intrarom <span class="date">Jan 2019 – Jan 2020</span></div>
+      <ul>
+        <li>Configured and tested wireless network equipment</li>
+        <li>Verified functionality and reported defects</li>
+        <li>Collaborated with engineers to resolve issues</li>
+      </ul>
+    </div>
 
-</body></html>
+    <div class="section">
+      <h2>] EDUCATION & CERTIFICATIONS</h2>
+      <ul>
+        <li>Cisco Networking Academy - CCST Networking (In Progress - Completed Courses: Network Basics & Networking Devices and Initial Configuration)</li>
+        <li>Cisco Networking Academy - NDG Linux Essentials (2024)</li>
+        <li>Cisco Networking Academy - Getting Started with Cisco Packet Tracer (2024)</li>
+        <li>Cisco Networking Academy - NDG Linux Unhatched (2021)</li>
+        <li>Bitacademy - Frontend Web Development - Module 2 JavaScript (2022)</li>
+        <li>Bitacademy - FrontEnd Web Development - Module 1 HTML & CSS (2021)</li>
+        <li>Bitacademy - Java Programming Fundamentals (2019)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>] LANGUAGES</h2>
+      <ul>
+        <li>Romanian: Native</li>
+        <li>English: C1 Listening/Reading, B2 Speaking/Writing</li>
+        <li>Italian: Conversational</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>] FUTURE PLANS</h2>
+      <ul>
+        <li>Earn Cisco Certified Network Associate (CCNA) certification</li>
+        <li>Advance toward Cisco Certified Network Professional (CCNP) certification</li>
+        <li>Expand Linux Knowledge & master linux command-line</li>
+        <li>Expand scripting automation skills with Linux Bash and PowerShell</li>
+        <li>Learn Python</li>
+      </ul>
+    </div>
+
+    <footer>Designed and coded by Bogdan Zafiescu | Compiled: 2025</footer>
+  </div>
+</body>
+</html>
