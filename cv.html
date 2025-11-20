@@ -21,7 +21,7 @@
       --text-secondary: #8892b0;
       --text-muted: #63718a;
       --border: #233554;
-      --glow: rgba(100, 255, 218, 0.3);
+      --glow: rgba(100, 255, 218, 0.2);
     }
     * { margin:0; padding:0; box-sizing:border-box; }
     body {
@@ -59,11 +59,12 @@
       text-decoration: none;
     }
     .photo {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 4px solid var(--main-color);
-      box-shadow: 0 0 20px var(--glow);
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 12px;           /* subtle corners */
+      border: 3px solid var(--main-color);
+      box-shadow: 0 4px 15px var(--glow);
     }
     .contact { font-size: 0.95rem; margin-top: 10px; }
     .contact i { color: var(--main-color); margin-right: 8px; }
@@ -106,7 +107,7 @@
       <div>
         <a href="bogdanzafiescu_github-final.pdf" class="download-pdf"><i class="fas fa-file-pdf"></i> DOWNLOAD .pdf</a>
         <br><br>
-        <img src="YOUR_PHOTO_URL_HERE" alt="Bogdan Zafiescu" class="photo">
+        <img src="poza.png" alt="Bogdan Zafiescu" class="photo">
       </div>
     </header>
 
