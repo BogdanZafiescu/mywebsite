@@ -59,13 +59,13 @@
       text-decoration: none;
     }
     .photo {
-      width: 130px;
-      height: 130px;
-      object-fit: cover;
-      border-radius: 12px;           /* subtle corners */
-      border: 3px solid var(--main-color);
-      box-shadow: 0 4px 15px var(--glow);
-    }
+  border: 3px solid #00ff41 !important;
+  box-shadow: 
+    0 0 20px #00ff41,
+    0 0 40px #00ff4180,
+    0 0 60px #00ff4140;
+  animation: flicker 3s infinite alternate;
+}
     .contact { font-size: 0.95rem; margin-top: 10px; }
     .contact i { color: var(--main-color); margin-right: 8px; }
     a { color: var(--main-color); text-decoration: none; }
